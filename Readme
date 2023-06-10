@@ -1,0 +1,28 @@
+
+
+Run this tool within this directory by bash
+#dependency samtools should be installed in /usr/local/bin/samtools 
+#otherwise you have to edit the path in the perl_script2.pl 
+
+$sh extract_fasta.sh -q query_id.txt -f sequence.fasta 
+
+make sure that your sequence.fasta file is 
+>fasta_01
+AATGCTATGTGACATATGACTCCTTCGAACAGATTCTGGTTTATCAGACTTATAACTCCT
+GGTACTTAGTATTGCGTGACTAGATACAAGCAAGTATCAAAACTACAATCAACTGTTAAC
+
+
+#and your query id is "fasta_01"
+
+#This tool can not read the fasta file that have 
+
+>fasta_01|genename
+AATGCTATGTGACATATGACTCCTTCGAACAGATTCTGGTTTATCAGACTTATAACTCCT
+GGTACTTAGTATTGCGTGACTAGATACAAGCAAGTATCAAAACTACAATCAACTGTTAAC
+
+#and your query id is "fasta_01"
+
+
+#although it is a nice tool to make your job easy
+
+#we will improve it. 
